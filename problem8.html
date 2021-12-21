@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let random = Math.floor(Math.random() * 100) + 1;
+        console.log(random);
+        for (i=1; i <= 8; i++) {
+            input = prompt("Please Gues a number between 1 & 100")
+            if (input == random) {
+                alert("Correct great guess, with trial " + i + " of 8 trials!")
+                break
+            }
+            if (input < random) {
+                alert("Number is too small! Trial " + i + '/8')
+                continue
+            } else if(input < random){
+                alert("Number is too large! Trial" + i + '/8')
+            }
+        }
+    </script>
+</body>
+</html>

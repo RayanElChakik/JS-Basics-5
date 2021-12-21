@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="input" type="number"  placeholder="Input a Number...">
+<h2 id="result"></h2>
+<script type="text/javascript">
+
+let input = document.getElementById("input");
+
+input.addEventListener('change', (evt)=> (calc(evt.target.value)))
+
+function calc(input) {
+    let total = 0
+    for (let i = 1 ; i <= input; i++)
+    {if ( i%3 == 0 || i%5 == 0){total+= i}
+else {total}};
+
+  return  document.getElementById("result").innerText = total
+}
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="input" type="number"  placeholder="Input a Number...">
+    <button id="sum" onclick="sum()">Sum</button>
+    <button id="mult" onClick="multiply()">Multiply</button>
+
+<h2 id="result"></h2>
+<script type="text/javascript">
+function sum() {
+ input =  document.getElementById("input").value
+    let total = 0
+    for (let i = 1 ; i <= input; i++)
+    { total+= i};
+
+  return  document.getElementById("result").innerText = total
+}
+function multiply() {
+  input =  document.getElementById("input").value
+    let total = 1
+    for (let i = 1 ; i <= input; i++)
+    { total*= i};
+
+  return  document.getElementById("result").innerText = total
+}
+</script>
+</body>
+</html>
